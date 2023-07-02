@@ -10,6 +10,7 @@ class ViewController: UIViewController {
         view.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMaxYCorner]
         view.clipsToBounds = true
         view.layer.cornerRadius = 24
+        
         return view
     }()
     
@@ -98,12 +99,9 @@ private extension ViewController {
             view.trailingAnchor.constraint(equalTo: myStackView.trailingAnchor, constant: 20),
           myStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor,  constant: 70)
         ])
-        //logoutButton
-        
         
     }
     @objc func buttonTapped() {
-        // Действие при нажатии кнопки
         print("Button tapped")
     }
 }
